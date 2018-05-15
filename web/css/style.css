@@ -1,0 +1,270 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin,latin-ext);
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+body {
+    background: white;
+    font-family: "Roboto Slab", serif;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    line-height: 1.1;
+}
+
+a {
+    text-decoration: none;
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+}
+
+a:hover {
+    color: #efefef;
+}
+
+.form {
+    background: rgba(239, 239, 239, 0);
+    padding: 40px;
+    max-width: 650px;
+    margin: 40px auto;
+    border-radius: 4px;
+}
+
+.tab-group {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 40px 0;
+}
+
+.tab-group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.tab-group li a {
+    display: block;
+    text-decoration: none;
+    padding: 15px;
+    background: #efefef;
+    color: #000000;
+    font-size: 20px;
+    float: left;
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+    border: 1px solid #000000;
+    border-collapse: collapse;
+}
+
+.tab-group li a:hover {
+    background: #000000;
+    color: #ffffff;
+}
+
+.tab-group .active a {
+    background: #dedede;
+    color: #000000;
+}
+
+.tab-content > div:last-child {
+    display: none;
+}
+
+label {
+    position: absolute;
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px);
+    left: 13px;
+    color: rgb(0, 0, 0);
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    -webkit-backface-visibility: hidden;
+    pointer-events: none;
+    font-size: 22px;
+}
+
+label .req {
+    margin: 2px;
+    color: #ff0000;
+}
+
+label.active {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    left: 2px;
+    font-size: 17px;
+}
+
+label.active .req {
+    opacity: 0;
+}
+
+label.highlight {
+    color: #000000;
+}
+
+input, textarea {
+    font-size: 22px;
+    display: block;
+    width: 100%;
+    height: 44px;
+    padding: 5px 10px;
+    background: none;
+    border: 1px solid #000000;
+    color: #000000;
+    border-radius: 0;
+    -webkit-transition: border-color .25s ease, -webkit-box-shadow .25s ease;
+    transition: border-color .25s ease, box-shadow .25s ease, -webkit-box-shadow .25s ease;
+}
+
+input:focus, textarea:focus {
+    outline: 0;
+    border-color: #000000;
+}
+
+input:disabled {
+    background: #efefef;
+}
+
+textarea {
+    border: 2px solid #000000;
+    resize: vertical;
+}
+
+.field-wrap {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.top-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.top-row > div {
+    float: left;
+    width: 67%;
+    margin-right: 4%;
+}
+
+.top-row > div:last-child {
+    margin: 0;
+}
+
+.button {
+    border: 1px solid #000000;
+    outline: none;
+    border-radius: 0;
+    padding: 15px 0;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: .1em;
+    background: #efefef;
+    color: #000000;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -webkit-appearance: none;
+}
+
+.button:hover, .button:focus {
+    background: #6e6e6e;
+}
+
+.button-block {
+    display: block;
+    width: 100%;
+}
+
+.forgot {
+    margin-top: -20px;
+    text-align: right;
+}
+
+.component-calendar {
+    margin: 50px auto;
+    border: 1px solid #dedede;
+    display: table;
+    border-collapse: separate;
+}
+
+#Calendar {
+    position: absolute;
+    border-collapse: collapse;
+    background: #FFFFFF;
+    display: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    z-index: 9999999;
+    box-shadow: 0 0 15px rgba(98, 98, 206, 1);
+}
+
+#Calendar_mns {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#Calendar select, #Calendar option {
+    font-size: 11px;
+    padding: 0 2px
+}
+
+.wrapper {
+    width: 98%;
+    margin: 1%;
+}
+
+.wrapper p,
+.wrapper a {
+    color: white;
+    text-align: right;
+}
+
+.tbl {
+    border-collapse: collapse;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.tbl th {
+    background-color: white;
+}
+
+.tbl td,
+.tbl th {
+    border: 2px solid black;
+    padding: 2px 5px;
+    vertical-align: top;
+}
+
+.tbl tbody tr {
+    text-align: right;
+}
+
+.tbl tbody tr:nth-child(odd) {
+    background-color: white;
+    text-align: right;
+}
+
+.tbl tbody tr:hover {
+    background-color: white;
+}
+
+.sortable thead,
+.sortable tfoot {
+    cursor: pointer;
+}
